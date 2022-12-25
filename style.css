@@ -1,18 +1,19 @@
 body{
-    margin: 0;
+    margin: 6px;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(3, 66, 3);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1{
     margin: 0;
     padding: 0;
-    color: #111;
-    font-size: 14em;
+    color: rgb(48, 13, 247);
+    font-size: 5em;
+    
 }
 h1 span{
   
@@ -22,20 +23,30 @@ h1 span{
 }
 @keyframes animate{
     0%{
-        color:chocolate;
+        color:rgb(156, 194, 18);
         filter: blur(2px);
-        box-shadow: 0 0 10px #00b3ff,
-        0 0 10px #00b3ff,
+        box-shadow: 0 0 10px #9fb90c,
+        0 0 10px #cedb15,
         0 0 20px #00b3ff,
-        0 0 40px #00b3ff,
-        0 0 60px #00b3ff,
-        0 0 80px #00b3ff,
-        0 0 120px #00b3ff,
-        0 0 140px #00b3ff,
-        0 0 160px #00b3ff,
+        0 0 40px #ff0000,
+        0 0 60px #630505,
+        0 0 80px #0b1c7c,
+        0 0 120px #b426a8,
+        0 0 140px #185c07,
+        0 0 160px #979508,
     }
     5%,95%{
-        color: #111;
+        color: rgb(207, 14, 14);
         filter: blur(0px);
     }
+}
+.main{
+    width: 650px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blue;
+    border-radius: 20px;
+    animation: animate 3s linear infinite; 
 }
